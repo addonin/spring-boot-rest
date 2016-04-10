@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+  <doc xml:lang="en" title="http://localhost:8080"/>
+  <resources base="http://localhost:8080">
+    <resource path="events" id="eventsResource">
+      <doc xml:lang="en" title="Events"/>
+      <method name="GET" id="events">
+        <doc xml:lang="en" title="Events"/>
+        <request/>
+        <response status="200">
+          <representation mediaType="application/json;charset=UTF-8"/>
+        </response>
+      </method>
+    </resource>
+  </resources>
+</application>

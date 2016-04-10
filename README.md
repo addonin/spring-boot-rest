@@ -1,1 +1,1 @@
-https://github.com/addonin/spring-advanced
+https://github.com/addonin/spring-boot-rest

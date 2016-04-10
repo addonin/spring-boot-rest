@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8799b1e5-a0b1-4e12-a645-e38dae5b0953" activeEnvironment="Default" name="REST Spring Boot"
+                    resourceRoot="" soapui-version="5.2.1" xsi:schemaLocation="http://eviware.com/soapui/config "
+                    abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:interface xsi:type="con:RestService" id="11f1b858-f493-461a-b713-a9f021c3baf6"
+                   wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest">
+        <con:settings/>
+        <con:definitionCache type="TEXT" rootPart=""/>
+        <con:endpoints>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+        </con:endpoints>
+        <con:resource name="Upload events" path="/uploads/events" id="3f4f674e-2de3-4cf0-b159-7b44d7b36955">
+            <con:settings/>
+            <con:parameters/>
+            <con:method name="uploadEvents" id="814aab92-453d-4d2c-8c3f-60fcc3ba6762" method="POST">
+                <con:settings/>
+                <con:parameters/>
+                <con:representation type="FAULT">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>500</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:request name="uploadEvents" id="48634b7a-3434-4a7e-ac00-426e39e3f467" mediaType="application/json"
+                             postQueryString="false">
+                    <con:settings>
+                        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry
+                            key="Content-type" value="application/json" xmlns="http://eviware.com/soapui/config"/>
+                        </con:setting>
+                    </con:settings>
+                    <con:endpoint>http://localhost:8080</con:endpoint>
+                    <con:request/>
+                    <con:originalUri>http://localhost/uploads/events</con:originalUri>
+                    <con:credentials>
+                        <con:authType>No Authorization</con:authType>
+                    </con:credentials>
+                    <con:attachment>
+                        <con:name>events.json</con:name>
+                        <con:contentType>application/json</con:contentType>
+                        <con:size>122</con:size>
+                        <con:contentId>events.json</con:contentId>
+                        <con:url>/home/dimon/IdeaProjects/spring-boot-rest/src/main/resources/data/events.json</con:url>
+                        <con:data>
+                            UEsDBBQACAgIAIoGi0gAAAAAAAAAAAAAAAALAAAAZXZlbnRzLmpzb26L5lJQqAZiBQWlvMTcVCUrBaXUstS8kngwTwcik5JYkhqSCZE1MjA01TUw0TU0DDEwsDI0gKkpyUzOTi0JKMpMBiszNNCztITJFSWWZOalg4Q9PN09lICCtVyxAFBLBwgYzayFXAAAAHoAAABQSwECFAAUAAgICACKBotIGM2shVwAAAB6AAAACwAAAAAAAAAAAAAAAAAAAAAAZXZlbnRzLmpzb25QSwUGAAAAAAEAAQA5AAAAlQAAAAAA
+                        </con:data>
+                        <con:id>2f73debc-cb54-423f-8cfc-41972f86f870</con:id>
+                    </con:attachment>
+                    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                    <con:jmsPropertyConfig/>
+                    <con:parameters/>
+                </con:request>
+            </con:method>
+        </con:resource>
+    </con:interface>
+    <con:interface xsi:type="con:RestService" id="d1dc80ba-7c0a-4e2d-be2c-cb07d690363a"
+                   wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest">
+        <con:settings/>
+        <con:definitionCache/>
+        <con:endpoints>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+        </con:endpoints>
+        <con:resource name="Users" path="/users" id="7bd0d098-fad0-41aa-b55b-2962bc2356de">
+            <con:settings/>
+            <con:parameters/>
+            <con:method name="Users" id="5b0c4e2f-d8b6-478d-acb2-a31ad87d7bc2" method="GET">
+                <con:settings/>
+                <con:parameters/>
+                <con:representation type="RESPONSE">
+                    <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element>Response</con:element>
+                </con:representation>
+                <con:request name="getUsers" id="f82c4c19-e672-4a14-a780-34f2a6c36f52" mediaType="application/json">
+                    <con:settings>
+                        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/>
+                        </con:setting>
+                    </con:settings>
+                    <con:endpoint>http://localhost:8080</con:endpoint>
+                    <con:request/>
+                    <con:originalUri>http://localhost/users</con:originalUri>
+                    <con:credentials>
+                        <con:authType>No Authorization</con:authType>
+                    </con:credentials>
+                    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                    <con:jmsPropertyConfig/>
+                    <con:parameters/>
+                </con:request>
+            </con:method>
+        </con:resource>
+    </con:interface>
+    <con:interface xsi:type="con:RestService" id="d6d02ea3-de74-4727-aabd-3f13a6a59483"
+                   wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest">
+        <con:settings/>
+        <con:definitionCache/>
+        <con:endpoints>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+        </con:endpoints>
+        <con:resource name="Events" path="/events" id="da413360-75ad-4421-834a-3475d673fcce">
+            <con:settings/>
+            <con:parameters/>
+            <con:method name="Events" id="84e90500-6376-4c0a-b193-a4879bc823bf" method="GET">
+                <con:settings/>
+                <con:parameters/>
+                <con:representation type="RESPONSE">
+                    <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element>Response</con:element>
+                </con:representation>
+                <con:request name="getEvents" id="9d344759-ad2a-4763-93a7-4eb42cdacb9c" mediaType="application/json">
+                    <con:settings>
+                        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/>
+                        </con:setting>
+                    </con:settings>
+                    <con:endpoint>http://localhost:8080</con:endpoint>
+                    <con:request/>
+                    <con:originalUri>http://localhost/events</con:originalUri>
+                    <con:credentials>
+                        <con:authType>No Authorization</con:authType>
+                    </con:credentials>
+                    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                    <con:jmsPropertyConfig/>
+                    <con:parameters/>
+                </con:request>
+            </con:method>
+        </con:resource>
+    </con:interface>
+    <con:interface xsi:type="con:RestService" id="f097ef46-f009-4a47-a656-ec41685c312e"
+                   wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest">
+        <con:settings/>
+        <con:definitionCache/>
+        <con:endpoints>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+        </con:endpoints>
+        <con:resource name="Upload users" path="/uploads/users" id="04529a07-0277-4937-b0bc-bac50d30798c">
+            <con:settings/>
+            <con:parameters/>
+            <con:method name="uploadUsers" id="4bc60bbe-fc46-4268-b303-8d18daa0b2ef" method="POST">
+                <con:settings/>
+                <con:parameters/>
+                <con:representation type="RESPONSE">
+                    <con:mediaType xsi:nil="true"/>
+                    <con:status>200</con:status>
+                    <con:params/>
+                    <con:element>data</con:element>
+                </con:representation>
+                <con:request name="uploadUsers" id="03fd9927-db07-4d4f-b8b9-7c65f41bf0ee" mediaType="application/json"
+                             postQueryString="false">
+                    <con:settings>
+                        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry
+                            key="Content-type" value="application/json" xmlns="http://eviware.com/soapui/config"/>
+                        </con:setting>
+                    </con:settings>
+                    <con:endpoint>http://localhost:8080</con:endpoint>
+                    <con:request/>
+                    <con:originalUri>http://localhost/uploads/users</con:originalUri>
+                    <con:credentials>
+                        <con:authType>No Authorization</con:authType>
+                    </con:credentials>
+                    <con:attachment>
+                        <con:name>users.json</con:name>
+                        <con:contentType>application/json</con:contentType>
+                        <con:size>223</con:size>
+                        <con:contentId>users.json</con:contentId>
+                        <con:url>/home/dimon/IdeaProjects/spring-boot-rest/src/main/resources/data/users.json</con:url>
+                        <con:data>
+                            UEsDBBQACAgIAPcIi0gAAAAAAAAAAAAAAAAKAAAAdXNlcnMuanNvbjWOTQuCQBiE7/2KZfFYsFpEdMqPJTSCWuuQIrHiCxqrW2sfbNF/T6s9DMzMA8OkA4RenRDCDa8BzxG+taC+fvjroeaVMGDxS3905m37kKroqeVwyyaWn+ipd3CjErg8g6rirboIWG/Bi+SE+TMdSlG4m9tJwD1Y7VhyKZ/a7OWVupYF1/2eQwgZkfGI2IYqKaDtUIoZXYbxjjIaHPcxZTgzVxueC+jv2F3xHmQfUEsHCI2auzitAAAA3wAAAFBLAQIUABQACAgIAPcIi0iNmrs4rQAAAN8AAAAKAAAAAAAAAAAAAAAAAAAAAAB1c2Vycy5qc29uUEsFBgAAAAABAAEAOAAAAOUAAAAAAA==
+                        </con:data>
+                        <con:id>d653a5d2-9528-465e-afe0-b1ee0f275f2d</con:id>
+                    </con:attachment>
+                    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                    <con:jmsPropertyConfig/>
+                    <con:parameters/>
+                </con:request>
+            </con:method>
+        </con:resource>
+    </con:interface>
+    <con:properties/>
+    <con:wssContainer/>
+    <con:oAuth2ProfileContainer/>
+    <con:sensitiveInformation/>
+</con:soapui-project>
